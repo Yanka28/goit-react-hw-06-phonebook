@@ -14,7 +14,7 @@ export const ContactForm = () => {
   });
 
   const doesItExist = object => {
-    return contacts.some(
+    return contacts.list.some(
       contact =>
         contact.name.toLowerCase() === object.name.toLowerCase() ||
         contact.number === object.number

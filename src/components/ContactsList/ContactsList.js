@@ -11,7 +11,7 @@ export const ContactsList = () => {
 
   const getExistingContacts = () => {
     const normalizedFilter = filter.toLowerCase();
-    return contacts.filter(contact =>
+    return contacts.list.filter(contact =>
       contact.name.toLowerCase().includes(normalizedFilter)
     );
   };
